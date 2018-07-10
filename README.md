@@ -1,2 +1,1 @@
-# Bankers-Algorithm
-Implementation of Banker's algorithm for resource allocation and deadlock avoidance.
+# bankers_with_queries
