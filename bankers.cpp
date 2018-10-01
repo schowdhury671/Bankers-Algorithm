@@ -12,7 +12,7 @@ int main(int argc, char*argv[])
 
 
 	///////////////////////////INPUTS///////////////////////////////////
-	int n,r,q;
+	int n,r,q,isAvailable = 0;
 	infile >> n >> r >> q;
 	int x;
 
@@ -146,9 +146,7 @@ int main(int argc, char*argv[])
 				fails=0; //Reseting the fails ie Continuous Denials
 
 				for(unsigned int j=0;j<cpqt.size();j++)  //Decreasing the available
-				{
 					available[j]=available[j]-cpqt[j];
-				}
 
 				vector<int> cpav = allocated[currpid];  //Increasing the allocated of current process
 				for(unsigned int j=0;j<cpqt.size();j++)
@@ -157,17 +155,15 @@ int main(int argc, char*argv[])
 				}
 				allocated[currpid]=cpav;
 
-
+				if(isAvailable) {} // For debugging purpose
 				vector<int> cpm = maxneed[currpid];  //Checking of the MAX need is satisfied
-				bool maxfulfilled=true;
-				for(unsigned int j=0;j<cpqt.size();j++)
-				{
+				bool maxfulfilled=true; // To check if all request has been fulfilled
+				for(unsigned int j=0;j<cpqt.size();j++
 					if(cpav[j]!=cpm[j])
 					{
 						maxfulfilled = false;
 						break;
 					}
-				}
 				if(maxfulfilled)  //if YES
 				{
 					readyqueue.erase(readyqueue.begin() + i);  //Remove the current process from ready queue
