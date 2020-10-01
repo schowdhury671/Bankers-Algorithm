@@ -79,6 +79,7 @@ int main(int argc, char*argv[])
 
 	//FOR QUERIES///////////////////////////////////////////////////////
 
+	// map containing the queries fired at runtime by the user
 	map< int,vector< vector<int> > >queries;
 
 	for(int i=0;i<q;++i)
