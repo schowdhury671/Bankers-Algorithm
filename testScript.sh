@@ -1,6 +1,7 @@
 #!/bin/bash
 ###g++ bankers.cpp
 ###./a.out $1 $2
+rm output.txt
 touch output.txt
 sh 20172123.sh input_test_file.txt output.txt
 
