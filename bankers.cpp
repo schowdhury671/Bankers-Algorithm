@@ -4,10 +4,12 @@
 #include <stdio.h>
 using namespace std;
 
+
 bool sortbysec(const pair<int,int> &a,const pair<int,int> &b)
 {
     return (a.second < b.second);
 }
+
 
 int main(int argc, char*argv[])
 {
