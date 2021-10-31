@@ -4,7 +4,7 @@
 #include <stdio.h>
 using namespace std;
 
-// added comparator function
+
 bool sortbysec(const pair<int,int> &a,const pair<int,int> &b)
 {
     return (a.second < b.second);
@@ -18,6 +18,7 @@ int main(int argc, char*argv[])
 	fstream infile(argv[1], std::ios_base::in);
 	fstream outfile(argv[2], std::ios_base::out);
 
+	#dynamic queue can be used to accomodate run time queries
 
 	///////////////////////////INPUTS///////////////////////////////////
 	int n,r,q,isAvailable = 0;
