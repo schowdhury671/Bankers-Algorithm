@@ -1,5 +1,5 @@
 // Sanjoy Chowdhury 20172123
-
+// details
 #include <bits/stdc++.h>
 #include <stdio.h>
 using namespace std;
